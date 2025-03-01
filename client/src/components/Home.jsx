@@ -69,47 +69,50 @@ function Home() {
 
 
     return (<div>
-        <div className="m-10 grid sm:grid-cols-2 md:grid-cols-1 justify-center lg:grid-cols-1">
-            <div className="bg-slate-300 p-5 fixed top-0 left-0 w-full z-20">
-                <div className="flex items-center justify-around">
-                    <h1 className="text-3xl font-bold font-mono">Luxemart</h1>
-                    <div className="space-x-10 items-center hidden md:flex">
-                        <Link to={"/home"}><p className="text-2xl font-bold">Home</p></Link>
-                        <Link to={"/men"}><p className="text-2xl font-bold">Men</p></Link>
-                        <Link to={"/female"}><p className="text-2xl font-bold">Female</p></Link>
-                        <Link to={"/kids"}><p className="text-2xl font-bold">Kids</p></Link>
-                    </div>
-
-                    <div className="items-center justify-around space-x-10 hidden md:flex">
-                    <Link to={"/card"}><img src={cart} alt="no_img" /></Link> 
-                        {
-                            log ? <button className="bg-[#2a52f5] p-2 text-white rounded-md" onClick={Logout} >Log Out</button> : <button className="bg-[#2a5f] p-2 text-white rounded-md"><Link to={"/log"}>Login</Link></button>
-                        }
-                    </div>
-                    <button><svg xmlns="http://www.w3.org/2000/svg" onClick={() => { setopen(true) }} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-10 md:hidden">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                    </svg ></button>
-                </div>
-            </div>
-            {
-                open ? <p>hello</p> : ""
-            }
-            <div>
-            <div className={`bg-slate-300 fixed w-[250px] h-screen  z-30  top-0 ${open ? "right-0" : "-right-[550px]"}`} style={{transition:"2s"}}>  
-                    <div className="flex flex-col items-center space-y-5 p-3 mt-[50px]">
-                    <button className="text-3xl bg-red-600 p-2 rounded-lg text-white" onClick={()=>{setopen(false)}}>X</button>
-                        <Link to={"/home"}><p className="text-2xl font-bold">Home</p></Link>
-                        <Link to={"/men"}><p className="text-2xl font-bold">Men</p></Link>
-                        <Link to={"/female"}><p className="text-2xl font-bold">Female</p></Link>
-                        <Link to={"/kids"}><p className="text-2xl font-bold">Kids</p></Link>
-                        <Link to={"/card"}><img src={cart} alt="no_img" /></Link> 
-                       {
-                            log ? <button className="bg-[#2a52f5] p-2 text-white rounded-md" onClick={Logout} >Log Out</button> : <button className="bg-[#2a5f] p-2 text-white rounded-md"><Link to={"/log"}>Login</Link></button>
-                        }
-                    </div>
-
-                </div>
-            </div>
+        <div>
+       <div className="bg-slate-300 p-5 fixed top-0 left-0 w-full z-30">
+             <div className="flex items-center justify-between">
+               <h1 className="text-3xl font-bold font-mono">Luxemart</h1>
+               <div className="space-x-10 items-center hidden md:flex">
+                 <Link to={"/home"}> <p className="text-2xl font-bold">Home</p></Link>
+                 <Link to={"/men"}><p className="text-2xl font-bold">Men</p></Link>
+                 <Link to={"/female"}><p className="text-2xl font-bold">Female</p></Link>
+                 <Link to={"/kids"}><p className="text-2xl font-bold">Kids</p></Link>
+               </div>
+               <div className="items-center space-x-10 hidden md:flex">
+                 <Link to={"/card"}><img src={cart} alt="no_img" /></Link>
+       
+                 {
+                   log ? <button className="bg-[#2a52f5] p-2 text-white rounded-md" onClick={Logout}>Log Out</button> : <button className="bg-[#2a5f] p-2 text-white rounded-md"><Link to={"/log"}>Login</Link></button>
+                 }
+       
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" style={{cursor:"pointer"}} onClick={()=>{setopen(true)}} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-10 md:hidden">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+               </svg>
+       
+             </div>
+       
+           </div>
+           {
+                       open ? <p>hello</p> : ""
+                   }
+                   <div>
+                       <div className={`bg-slate-300 fixed w-[250px] h-screen  z-30  top-0 ${open ? "right-0" : "-right-[550px]"}`} style={{transition:"2s"}}> 
+                           <div className="flex flex-col items-center space-y-5 p-3 mt-[50px]">
+                           <button className="text-3xl bg-red-600 p-2 rounded-lg text-white" onClick={()=>{setopen(false)}}>X</button>
+                               <Link to={"/home"}><p className="text-2xl font-bold">Home</p></Link>
+                               <Link to={"/men"}><p className="text-2xl font-bold">Men</p></Link>
+                               <Link to={"/female"}><p className="text-2xl font-bold">Female</p></Link>
+                               <Link to={"/kids"}><p className="text-2xl font-bold">Kids</p></Link>
+                             <Link to={"/card"}><img src={cart} alt="no_img" /></Link> 
+                               {
+                                   log ? <button className="bg-[#2a52f5] p-2 text-white rounded-md" onClick={Logout} >Log Out</button> : <button className="bg-[#2a5f] p-2 text-white rounded-md"><Link to={"/log"}>Login</Link></button>
+                               }
+                           </div>
+       
+                       </div>
+                   </div>
             <div id="heading" className="p-3 mt-[100px] border rounded-md">
                 <img src={banner} alt="" />
             </div>
@@ -124,9 +127,9 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center justify-center p-2">
             <h1 className="text-3xl p-4 font-bold mt-4">Trending Now</h1>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap items-center justify-center">
                 <div id="brand_1" className="p-3">
                     <img src={popcorn} alt="No such images" />
                     <div id="logo" className="flex justify-center items-center gap-5 sm:justify-center">
@@ -175,7 +178,7 @@ function Home() {
                 <div id="brand_1" className="p-3">
                     <img src={len} alt="no such images" className="bg-slate-100" />
                     <div id="logo" className="flex justify-between items-center flex-wrap">
-                        <p className="text-xl">Lenovo LOQ i5</p>
+                        <p className="text-xl">Pink Ruffle Tee & Skirt Set</p>
                         <div>
                             <div className="flex gap-1 flex-wrap">
                                 <img src={star} alt="no image" />
@@ -194,7 +197,7 @@ function Home() {
         <div>
             <h1 className="text-3xl p-4 mt-[5px] font-bold text-center">Best Selling</h1>
             <div>
-                <div className="flex justify-center flex-wrap">
+                <div className="flex justify-center pl-5 flex-wrap">
                     <Favourite />
                 </div>
             </div>

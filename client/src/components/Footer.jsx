@@ -6,7 +6,7 @@ import { Link} from "react-router-dom"
 function Footer()
 {
     return(
-        <div className=" bg-zinc-500 bg-opacity-25 p-3 w-screen text-black">
+        <div className=" bg-zinc-500 bg-opacity-25 p-5 mt-5 md:w-screen sm:w-[50%] text-black">
             <div className="flex justify-around">
             <div className="p-2">
                 <h1 className="text-2xl font-bold">About Our Store</h1>
@@ -35,22 +35,15 @@ function Footer()
                 <p>Terms and Condition</p>
                 <p>Privacy Policy</p>
             </div>
-            <div>
-                <h1 className="text-2xl font-bold">Partner With Us</h1>
-                <p>Sell on Our Platform</p>
-                <p>Brand Collaboration</p>
-                <p>Sponsored Listings</p>
-                <p>Advertising Opportunities</p>
-                <p>Affiliate Program</p>
-            </div>
+          
             </div>
             <div className="mt-14">
-                <div className="flex justify-around items-center">
+                <div className="flex justify-around space-x-9 items-center">
                 <p className="text-5xl font-serif font-thin">Luxemart</p>
-                <div className="flex gap-[40px]">
-                <Link to={"https://web.whatsapp.com/"}><img src={whats} className="w-[50px] h-[50px]"></img></Link>
-                <Link to={"https://www.facebook.com/"}><img src={facebook} className="w-[50px] h-[50px]"></img></Link>
-                <Link to={"https://www.instagram.com/"}><img src={insta} className="w-[50px] h-[50px]"></img></Link>
+                <div className="flex space-x-4">
+                <Link to={"https://web.whatsapp.com/"}><img src={whats} className="w-[30px] h-[30px]"></img></Link>
+                <Link to={"https://www.facebook.com/"}><img src={facebook} className="w-[30px] h-[30px]"></img></Link>
+                <Link to={"https://www.instagram.com/"}><img src={insta} className="w-[30px] h-[30px]"></img></Link>
                 </div>
             </div>
             <h1 className="text-center text-xs mt-8">&copy;2025 All Rights Reserved</h1>

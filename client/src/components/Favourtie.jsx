@@ -17,10 +17,6 @@ const Favourite = () => {
 
     var [count, setcount] = useState(20)
 
-
-   
-
-
     function fav()
     {
         setcount(count++)

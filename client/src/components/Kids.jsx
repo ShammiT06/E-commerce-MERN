@@ -222,7 +222,7 @@ function Logout()
                     <button onClick={handleSubmit} className="p-2 w-[50%] mt-4 bg-blue-100 font-mono text-2xl" style={{ "box-shadow": 'rgba(3, 102, 214, 0.3) 0px 0px 0px 3px' }}>Add to Collection Page</button>
 
                 </div>
-                <Footer></Footer>
+    
             </div>:""
             }
             <Footer></Footer>           
