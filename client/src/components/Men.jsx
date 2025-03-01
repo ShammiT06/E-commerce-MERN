@@ -24,7 +24,7 @@ function Men() {
 
 
   useEffect(() => {
-    axios.post("http://localhost:5000/showarr").then((data) => {
+    axios.post("https://e-commerce-mern-rutg.onrender.com/showarr").then((data) => {
       console.log(data.data)
       setCollection(data.data)
 
@@ -116,7 +116,7 @@ function Logout()
 
     setCollection([...collection, newItem])
 
-    axios.post("http://localhost:5000/addnew", { "newItem": newItem }).then(() => {
+    axios.post("https://e-commerce-mern-rutg.onrender.com/addnew", { "newItem": newItem }).then(() => {
       console.log("Data Successfully sent to Data")
     }).catch(() => {
       console.log("Issue")

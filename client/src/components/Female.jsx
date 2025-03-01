@@ -37,7 +37,7 @@ function Female() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:5000/showlad").then((data) => {
+    axios.get("https://e-commerce-mern-rutg.onrender.com/showlad").then((data) => {
       console.log(data.data)
       setCollect(data.data)
     })
@@ -111,7 +111,7 @@ function Female() {
 
 
 
-    axios.post("http://localhost:5000/female", { "newdet": newarr }).then(() => {
+    axios.post("https://e-commerce-mern-rutg.onrender.com/female", { "newdet": newarr }).then(() => {
       console.log("Data sent successfully")
     }).catch(() => {
       console.log("Error")

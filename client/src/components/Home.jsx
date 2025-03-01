@@ -141,7 +141,7 @@ function Home() {
 
                     </div>
 
-                    <p className="cursor-pointer" onClick={increment}>❤️{pop} Likes</p>
+                    <button className="cursor-pointer" onClick={increment}>❤️{pop} Likes</button>
                 </div>
                 <div id="brand_1" className="p-3">
                     <img src={laddies} alt="no such images" />
@@ -156,7 +156,7 @@ function Home() {
                         </div>
                     </div>
 
-                    <p className="cursor-pointer" onClick={increlad}>❤️{lad} Likes</p>
+                    <button className="cursor-pointer" onClick={increlad}>❤️{lad} Likes</button>
                 </div>
                 <div id="brand_1" className="p-3">
                     <img src={jeans} alt="no such image" />
@@ -170,7 +170,7 @@ function Home() {
                             <img src={star} alt="no image" />
                         </div>
                     </div>
-                    <p className="cursor-pointer" onClick={increpan}>❤️{pan} Likes</p>
+                    <button className="cursor-pointer" onClick={increpan}>❤️{pan} Likes</button>
                 </div>
                 <div id="brand_1" className="p-3">
                     <img src={len} alt="no such images" className="bg-slate-100" />
@@ -186,7 +186,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <p className="cursor-pointer" onClick={increlap}>❤️{lap} Likes</p>
+                    <button className="cursor-pointer" onClick={increlap}>❤️{lap} Likes</button>
 
                 </div>
             </div>

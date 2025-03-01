@@ -48,7 +48,7 @@ function Kids() {
 
 
     useEffect(() => {
-        axios.post("http://localhost:5000/foundkids").then((data) => {
+        axios.post("https://e-commerce-mern-rutg.onrender.com/foundkids").then((data) => {
             setkid(data.data)
         })
 
@@ -115,7 +115,7 @@ function Logout()
         setkid([...kid, newar]);
 
 
-        axios.post("http://localhost:5000/addedkit", { "child": newar }).then(() => {
+        axios.post("https://e-commerce-mern-rutg.onrender.com/addedkit", { "child": newar }).then(() => {
             console.log("Data shared to backend")
         }).catch(() => {
             console.log("ERROR")
