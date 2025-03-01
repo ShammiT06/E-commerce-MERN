@@ -1,0 +1,38 @@
+#core{
+    padding: 10px;
+}
+input[type=radio]{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    appearance: none;
+    border: solid black 2px;
+}
+
+#lenovo{
+    background-image: url("../src/assets/p_img2.png");
+    background-size: cover;
+}
+
+.zebronics{
+    border: solid black 2px;
+    width: 200px;
+    margin-top: 150px;
+    height: 200px;
+}
+
+#typedata{
+    display: flex;
+}
+#lenovo:hover{
+    transition: 2s;
+    transform: scale(1.1);
+}
+
+#lenovo:checked+.zebronics{
+    background-image: url("../src/assets/p_img2.png");
+    background-size: cover;
+}
+

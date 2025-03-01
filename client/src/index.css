@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-size: 23px;
+    position: sticky;
+    top: 0;
+}
+
+#heading img{
+    width:100%;
+    padding: 10px;
+    height: 300px;
+    margin: auto; 
+}
+#rtx img{
+    width: 200px;
+    height: 200px;
+
+}
+#brand_1 img{
+    position: relative;
+
+}
+#brand_1 img{
+    width: 350px;
+    height: 350px;
+}
+#logo img{
+    width: 20px;
+    height: 20px;
+}
+#one img{
+    width: 30px;
+    height: 30px;
+}
