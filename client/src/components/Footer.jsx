@@ -6,7 +6,7 @@ import { Link} from "react-router-dom"
 function Footer()
 {
     return(
-        <div className=" bg-zinc-500 bg-opacity-25 p-5 mt-5 md:w-screen sm:w-[50%] text-black">
+        <div className=" bg-zinc-500 bg-opacity-25 p-5 mt-5 md:w-screen sm:w-[100%] text-black">
             <div className="flex justify-around">
             <div className="p-2">
                 <h1 className="text-2xl font-bold">About Our Store</h1>
