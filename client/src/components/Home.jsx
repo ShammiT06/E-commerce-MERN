@@ -70,7 +70,7 @@ function Home() {
 
     return (<div>
         <div>
-       <div className="bg-slate-300 p-5 fixed top-0 left-0 w-full z-30">
+       <div className="bg-slate-300 p-10 fixed top-0 left-0 w-full z-30">
              <div className="flex items-center justify-between">
                <h1 className="text-3xl font-bold font-mono">Luxemart</h1>
                <div className="space-x-10 items-center hidden md:flex">

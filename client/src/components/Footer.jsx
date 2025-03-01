@@ -6,8 +6,8 @@ import { Link} from "react-router-dom"
 function Footer()
 {
     return(
-        <div className=" bg-zinc-500 bg-opacity-25 p-5 mt-5 md:w-screen sm:w-[100%] text-black">
-            <div className="flex justify-around">
+        <div className=" bg-zinc-500 bg-opacity-25 p-10 mt-5  sm:w-[105vh] md:w-screen text-black">
+            <div className="flex justify-around items-center gap-[10px]">
             <div className="p-2">
                 <h1 className="text-2xl font-bold">About Our Store</h1>
                 <p>About</p>
